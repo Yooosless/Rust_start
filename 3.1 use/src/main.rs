@@ -1,0 +1,28 @@
+
+#![allow(dead_code)]
+enum Number {
+    Zero,
+    One,
+    Two,
+}
+
+enum Color {
+    Red = 0xff0000,
+    Green = 0x00ff00,
+    Blue = 0x0000ff,
+}
+
+fn main() {
+    use crate::Color::{Red, Blue};
+    println!("zero is {}", Number::Zero as i32);
+    println!("one is {}", Number::One as i32);
+
+    println!("roses are #{:06x}", Red as i32);
+    println!("violets are #{:06x}", Blue as i32);
+
+    //without using use
+    // `enums` can be cast as integers.
+    println!("roses 2 are #{:06x}", Color::Red as i32);
+    println!("violets 2 are #{:06x}", Color::Blue as i32);
+}
+
