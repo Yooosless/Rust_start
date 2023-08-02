@@ -19,3 +19,4 @@ Add a println! macro call that ```prints: Pi is roughly 3.142``` by controlling 
 Add a function rect_area which calculates the area of a Rectangle (try using nested destructuring).
 - ```3.1 use``` From 3.2 Enums>3.2.1 use
   - this one didn't have an activity, I just did this because I wanted to try use crate::enum and cast as integers.
+- ```6 Conversions``` This project contains of ```TryFrom``` ```TryInto``` for converting between types. Have used match, If let and assert_eq! to check here.
